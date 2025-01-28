@@ -1,4 +1,3 @@
-// bot.js
 const { Telegraf } = require('telegraf');
 require('dotenv').config(); // This will load the .env file
 
