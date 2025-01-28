@@ -1,5 +1,9 @@
 const { Telegraf } = require('telegraf');
-require('dotenv').config(); // This will load the .env file
+require('dotenv').config();
 
 const bot = new Telegraf(process.env.TELEGRAM_BOT_TOKEN);
-bot.launch();
+
+bot.start((ctx) => ctx.reply("Welcome to Arcane Empires!"));
+bot.launch().then(() => {
+  console.log("Bot is running!");
+});
