@@ -30,3 +30,6 @@ Thumbs.db
 # Specific to Arcane Empires
 gameState.json
 *.cache
+
+.env
+node_modules/
